@@ -1,0 +1,21 @@
+.card-video {
+  min-width: 300px !important;
+  mAX-width: 500px !important;
+  margin-bottom: 2rem !important;
+  -webkit-box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.87);
+  -moz-box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.87);
+  box-shadow: 0px 0px 12px -3px rgba(0,0,0,0.87);
+}
+
+.card-deck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}

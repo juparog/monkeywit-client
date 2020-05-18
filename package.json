@@ -1,0 +1,83 @@
+{
+  "name": "client-react-monkeywit",
+  "version": "0.1.0",
+  "description": "Cliente react para el sitio MonkeyWit.inc, este cliente se conecta a la api server-api-monkeywit para solicitar algunos datos",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "@fortawesome/react-fontawesome": "^0.1.9",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.5.0",
+    "convict": "^5.2.0",
+    "react": "^16.13.1",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "start:dev": "(set NODE_ENV=development) && webpack-dev-server --open --config=./config/webpack/webpack.config.js",
+    "start:prod": "(set NODE_ENV=production) && webpack-dev-server --open --config=./config/webpack/webpack.config.js",
+    "build": "rm -rf ./build && (set NODE_ENV=production) && webpack --config=./config/webpack/webpack.config.js",
+    "build:dev": "rm -rf ./build && (set NODE_ENV=development) && webpack --config=./config/webpack/webpack.config.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/npm/cli.git"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "eslint",
+    "convict"
+  ],
+  "author": "engineer-jrg <engineer.jrg@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/npm/cli/issues"
+  },
+  "homepage": "https://github.com/npm/cli#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-import-resolver-webpack": "^0.12.1",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-import-helpers": "^1.0.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.1",
+    "file-loader": "^6.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "path": "^0.12.7",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  }
+}

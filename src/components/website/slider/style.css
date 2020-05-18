@@ -1,0 +1,10 @@
+/* eslider*/
+.slider-container{
+    min-height: 300px !important;
+}
+
+.slider-container img {
+    min-width: 300px;
+    min-height: 300px;
+    object-fit: cover;
+}
