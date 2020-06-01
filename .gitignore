@@ -9,5 +9,5 @@ node_modules
 /build
 
 # misc
-/config/.env.development.json
-/config/.env.production.json
+/config/environment/.env.development.json
+/config/environment/.env.production.json
