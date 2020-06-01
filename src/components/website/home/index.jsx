@@ -2,8 +2,8 @@ import React, { PureComponent } from 'react';
 import { Spinner } from 'react-bootstrap';
 import { Fetch } from 'react-request';
 
-import CardVideo from '~/components/website/CardVideo';
-import Slider from '~/components/website/Slider';
+import CardVideo from '~/components/website/CardVideo/';
+import Slider from '~/components/website/Slider/';
 import './style.css';
 
 class Main extends PureComponent {

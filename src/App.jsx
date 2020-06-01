@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
 
-import RouteWithSubRoutes from '~/components/utils/RouteWithSubRoutes';
+import RouteWithSubRoutes from '~/components/utils/RouteWithSubRoutes/';
 import Routes from '~/routes';
 
 class App extends PureComponent {

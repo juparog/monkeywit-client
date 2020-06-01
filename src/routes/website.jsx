@@ -1,6 +1,6 @@
-import NoFound from '~/components/utils/NoFound';
-import Home from '~/components/website/Home';
-import ShowVideo from '~/components/website/ShowVideo';
+import NoFound from '~/components/utils/NoFound/';
+import Home from '~/components/website/Home/';
+import ShowVideo from '~/components/website/ShowVideo/';
 
 /**
  * retorna un array con las la configuracion de rutas

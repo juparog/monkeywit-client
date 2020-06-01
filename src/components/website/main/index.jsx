@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
 import { Switch } from 'react-router-dom';
 
-import RouteWithSubRoutes from '~/components/utils/RouteWithSubRoutes';
-import Footer from '~/components/website/Footer';
-import Navbar from '~/components/website/Navbar';
+import RouteWithSubRoutes from '~/components/utils/RouteWithSubRoutes/';
+import Footer from '~/components/website/Footer/';
+import Navbar from '~/components/website/Navbar/';
 import WebsiteRoutes from '~/routes/website';
 
 class Main extends PureComponent {
