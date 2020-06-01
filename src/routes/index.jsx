@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Main from '~/components/website/Main/';
+import Main from '~/components/website/main';
 
 /**
  * retorna un array con las la configuracion de rutas
