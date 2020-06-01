@@ -7,6 +7,8 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faTools,
+  faUnlink,
+  faBars,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -14,5 +16,7 @@ library.add(
   faFacebookSquare,
   faYoutube,
   faGithub,
+  faUnlink,
+  faBars,
   faTools,
 );

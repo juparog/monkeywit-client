@@ -1,6 +1,8 @@
 const Path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCSSExtract = require('mini-css-extract-plugin');
+const Webpack = require('webpack');
+const Config = require('../environment/config');
 
 // Inicializaciones
 const basePath = process.cwd();
@@ -68,7 +70,7 @@ function webpackConfigGenerator(mode) {
         filename: "styles.[hash:7].css",
         chunkFilename: "[id].css",
       }),
-      // new Webpack.EnvironmentPlugin(Config.getProperties()['reactApp']),
+      new Webpack.EnvironmentPlugin(Config.getProperties()['reactApp']),
     ],
 
     node: {
@@ -79,7 +81,7 @@ function webpackConfigGenerator(mode) {
     resolve: {
       alias: {
         "~": Path.join(basePath, '/src'),
-        "*static": Path.join(basePath, '/public'),
+        "static-files": Path.join(basePath, '/public'),
       },
       extensions: ['.js', '.jsx']
     }

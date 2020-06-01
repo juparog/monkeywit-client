@@ -29,7 +29,24 @@
     }],
     "react/jsx-props-no-spreading": ["error", {
       "custom": "ignore"
-    }]
+    }],
+    "import-helpers/order-imports": [
+      "warn",
+      {
+        "newlinesBetween": "always", // new line between groups
+        "groups": [
+          "/^react/",
+          "module",
+          "/^~/",
+          "/^static-files/",
+          ["parent", "sibling", "index"]
+        ],
+        "alphabetize": {
+          "order": "asc",
+          "ignoreCase": true
+        }
+      }
+    ]
   },
   "settings": {
     "import/resolver": {

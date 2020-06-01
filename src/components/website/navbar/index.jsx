@@ -1,15 +1,17 @@
 import React, { PureComponent } from 'react';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import {
+  Navbar, Nav, NavDropdown,
+} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-import Image1 from '*static/img/monkeywit/logo-512.png';
-import Image2 from '*static/img/monkeywit/monkeywit-512.png';
+import Image1 from 'static-files/img/monkeywit/logo-completo-512.png';
 
 import './style.css';
 
 class NavbarMain extends PureComponent {
   render() {
     return (
-      <Navbar bg="light" expand="md" className="py-0 navbar-dark fixed-top">
+      <Navbar bg="white" expand="md" className="py-0 navbar-dark fixed-top border-bottom shadow-black">
         <Navbar.Brand href="/inicio">
           <img
             alt=""
@@ -17,19 +19,13 @@ class NavbarMain extends PureComponent {
             height="40"
             className="d-inline-block align-center mr-1"
           />
-          <img
-            alt=""
-            src={Image2}
-            height="20"
-            className="d-inline-block align-center"
-          />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
-            <Nav.Link href="/inicio">Inicio</Nav.Link>
-            <Nav.Link href="#link1">Cursos</Nav.Link>
-            <Nav.Link href="#link2">Blog</Nav.Link>
+            <Link to="/inicio" className="nav-link">Inicio</Link>
+            <Link to="/cursos" className="nav-link">Cursos</Link>
+            <Link to="/blog" className="nav-link">Blog</Link>
             <NavDropdown title="Más" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Contacto</NavDropdown.Item>
               <NavDropdown.Divider />

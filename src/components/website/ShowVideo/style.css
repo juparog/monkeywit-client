@@ -1,0 +1,12 @@
+.video-container, .video-header {
+    display: flex;
+    justify-content: center;
+}
+
+.iframe-video {
+    width: 75%;
+}
+
+.test-altura {
+    height: 200px;
+}

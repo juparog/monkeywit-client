@@ -1,14 +1,11 @@
 import React, { PureComponent } from 'react';
 import { Carousel } from 'react-bootstrap';
 
-import Image1 from '*static/img/slider/first-slider.svg';
-import Image2 from '*static/img/slider/second-slider.svg';
-import Image3 from '*static/img/slider/third-slider.svg';
+import Image1 from 'static-files/img/slider/first-slider.svg';
+import Image2 from 'static-files/img/slider/second-slider.svg';
+import Image3 from 'static-files/img/slider/third-slider.svg';
 
 import './style.css';
-
-console.log('XXXXX:', Image1);
-
 
 class Slider extends PureComponent {
   render() {

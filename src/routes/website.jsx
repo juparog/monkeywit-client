@@ -1,5 +1,6 @@
-import React from 'react';
-import Home from '~/components/website/home';
+import NoFound from '~/components/utils/NoFound';
+import Home from '~/components/website/Home';
+import ShowVideo from '~/components/website/ShowVideo';
 
 /**
  * retorna un array con las la configuracion de rutas
@@ -15,11 +16,16 @@ export default [
   },
   {
     exact: true,
-    path: '/home',
+    path: '/inicio',
     component: Home,
   },
   {
+    exact: true,
+    path: '/cursos/videos/:videoId',
+    component: ShowVideo,
+  },
+  {
     path: '*',
-    component: <div>Ruta no encontrada!</div>,
+    component: NoFound,
   },
 ];

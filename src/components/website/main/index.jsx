@@ -1,8 +1,10 @@
 import React, { PureComponent } from 'react';
 import { Switch } from 'react-router-dom';
-import Navbar from '~/components/website/navbar';
+
+import RouteWithSubRoutes from '~/components/utils/RouteWithSubRoutes';
+import Footer from '~/components/website/Footer';
+import Navbar from '~/components/website/Navbar';
 import WebsiteRoutes from '~/routes/website';
-import RouteWithSubRoutes from '~/components/utils/routeWithSubRoutes';
 
 class Main extends PureComponent {
   render() {
@@ -16,6 +18,7 @@ class Main extends PureComponent {
             <RouteWithSubRoutes key={index.toString()} {...route} />
           ))}
         </Switch>
+        <Footer />
       </>
     );
   }
