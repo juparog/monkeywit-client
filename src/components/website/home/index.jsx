@@ -14,7 +14,7 @@ class Main extends PureComponent {
           <Slider />
         </header>
         <main className="main-container px-4">
-          <h2 className="text-secondary text-center font-weight-bold mt-2">Ultimos vídeos</h2>
+          <h2 className="text-secondary text-center font-weight-bold my-4">Ultimos vídeos</h2>
           <div className="card-deck container-last-videos">
             <Fetch url={`${process.env.urlApi}/videos`}>
               {({ fetching, failed, data }) => {
@@ -56,8 +56,8 @@ class Main extends PureComponent {
               }}
             </Fetch>
           </div>
-          <div className="videos-options">
-            <button type="button" className="btn btn-danger btn-lg py-2 my-2">Ver todos los cursos</button>
+          <div className="videos-options my-4">
+            <button type="button" className="btn btn-danger btn-lg py-2">Ver todos los cursos</button>
           </div>
         </main>
       </>
