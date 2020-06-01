@@ -3,6 +3,7 @@ import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import './style.css';
 
 class NoFound extends PureComponent {

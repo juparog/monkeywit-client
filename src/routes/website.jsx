@@ -1,4 +1,4 @@
-import NoFound from '~/components/utils/noFound';
+import NoFound from '~/components/utils/pathNoFound';
 import Home from '~/components/website/home';
 import ShowVideo from '~/components/website/showVideo';
 
